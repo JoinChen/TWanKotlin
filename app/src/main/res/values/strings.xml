@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">TWanKotlin</string>
+    <string name="jump">跳过</string>
+    <string name="serach_hint">Artical</string>
+    <string name="TestHome">HOME</string>
+    <string name="HotKey">HotKey</string>
+    <string name="TestTree">Tree</string>
+    <string name="TestWxChapter">WxChapter</string>
+</resources>
