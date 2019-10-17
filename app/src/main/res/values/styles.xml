@@ -22,9 +22,15 @@
 
     <!--启动页主题设置-->
     <style name="AppSplash" parent="Theme.AppCompat.Light.DarkActionBar">
-        <item name="android:windowBackground">@mipmap/splash</item>
+        <item name="android:windowIsTranslucent">true</item>
         <item name="android:windowNoTitle">true</item>
         <item name="windowNoTitle">true</item>
         <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <!--pop进入退出动画-->
+    <style name="PopAnimator">
+        <item name="android:windowEnterAnimation">@anim/pop_enter</item>
+        <item name="android:windowExitAnimation">@anim/pop_quit</item>
     </style>
 </resources>

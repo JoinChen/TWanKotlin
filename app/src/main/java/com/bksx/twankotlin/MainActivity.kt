@@ -1,16 +1,14 @@
 package com.bksx.twankotlin
 
 
-import android.content.Intent
-import android.os.Looper
 import android.support.v4.app.Fragment
 import android.support.v4.app.FragmentManager
 import android.support.v4.app.FragmentStatePagerAdapter
-import android.support.v4.view.ViewPager
-import android.view.View
 import android.view.ViewGroup
 import com.bksx.twankotlin.base.BaseActivity
+import com.bksx.twankotlin.ui.LoginActivity
 import com.bksx.twankotlin.ui.SearchActivity
+import com.bksx.twankotlin.ui.SettingActivity
 import com.bksx.twankotlin.ui.fragment.HomePageFragment
 import com.bksx.twankotlin.utils.start
 import com.taonce.wankotlin.ui.fragment.HotKeyFragment
@@ -39,6 +37,7 @@ class MainActivity : BaseActivity() {
 
     override fun initEvent() {
         tv_search.setOnClickListener { start(SearchActivity::class.java) }
+        fab_setting.setOnClickListener { start(SettingActivity::class.java) }
     }
 
     inner class MyAdapter(fm: FragmentManager) : FragmentStatePagerAdapter(fm) {

@@ -1,5 +1,6 @@
 package com.bksx.twankotlin.model
 
+import com.bksx.twankotlin.base.BaseBean
 import com.bksx.twankotlin.bean.QueryBean
 import com.bksx.twankotlin.contract.ISearchRltModel
 import com.bksx.twankotlin.net.BaseObserver
@@ -27,4 +28,5 @@ class SearchResultModel: ISearchRltModel {
                 }
             })
     }
+
 }

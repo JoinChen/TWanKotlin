@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <litepal>
     <dbname value="twanandroid"/>
-    <version value="1"/>
+    <!--每次对数据库进行修改后都要对版本号进行更改-->
+    <version value="2"/>
     <list>
         <mapping class="com.bksx.twankotlin.bean.db.HotKeyDB"/>
+        <mapping class="com.bksx.twankotlin.bean.db.CollectOffDB"/>
     </list>
 </litepal>

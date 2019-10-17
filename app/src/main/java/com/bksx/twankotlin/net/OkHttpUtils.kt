@@ -97,7 +97,7 @@ class OkHttpUtils private constructor(){
             val requesetUrl:String = request.url().toString()
             if ((requesetUrl.contains(Constant.wan_login)
                         || requesetUrl.contains(Constant.wan_register))
-                && response!!.header(Constant.SET_COOKIE).isNotEmpty()){
+                && response.headers(Constant.SET_COOKIE).isNotEmpty()){
                 val cookies : MutableList<String> = response.headers(Constant.SET_COOKIE)
                 val cookie : String = CookieUtils.encodeCookie(cookies)
                 CookieUtils.savaCookie(cookie)

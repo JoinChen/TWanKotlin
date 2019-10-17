@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="5dp"
+        app:contentPadding="5dp"
+        app:cardUseCompatPadding="true"
+        android:background="#f4f9fa"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:scaleType="center"
+                android:id="@+id/iv_wx_chapter"
+                android:src="@mipmap/history"
+                android:padding="10dp"/>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="15dp"
+                android:layout_toEndOf="@+id/iv_wx_chapter"
+                android:orientation="vertical">
+
+            <TextView android:layout_width="wrap_content" android:layout_height="0dp"
+                      android:layout_weight="1"
+                      android:id="@+id/tv_wx_chapter_title"
+                      android:textSize="14sp"
+                      android:maxLines="1"
+                      android:singleLine="true"
+                      android:textAllCaps="true"
+                      android:textColor="@color/black"
+                      android:text="title"/>
+
+            <TextView android:layout_width="wrap_content" android:layout_height="0dp"
+                      android:layout_weight="1"
+                      android:textSize="12sp"
+                      android:id="@+id/tv_wx_chapter_time"
+                      android:text="time"/>
+
+            <TextView android:layout_width="wrap_content" android:layout_height="0dp"
+                      android:layout_weight="1"
+                      android:textSize="12sp"
+                      android:id="@+id/tv_wx_chapter_name"
+                      android:text="name"/>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

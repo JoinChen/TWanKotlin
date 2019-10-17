@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content"
+               app:layout_constraintTop_toTopOf="parent"
+               app:layout_constraintLeft_toLeftOf="parent"
+               android:padding="20dp"
+               android:id="@+id/iv_author"
+               android:src="@mipmap/wx"/>
+
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+              app:layout_constraintTop_toTopOf="parent"
+              app:layout_constraintStart_toEndOf="@+id/iv_author"
+              android:paddingTop="20dp"
+              android:textSize="16sp"
+              android:textColor="@color/colorAccent"
+              android:text="@string/wx"
+              android:id="@+id/tv_author_name"
+              android:gravity="center_vertical"/>
+
+</android.support.constraint.ConstraintLayout>

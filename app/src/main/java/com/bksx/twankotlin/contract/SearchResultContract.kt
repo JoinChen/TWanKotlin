@@ -1,5 +1,6 @@
 package com.bksx.twankotlin.contract
 
+import com.bksx.twankotlin.base.BaseBean
 import com.bksx.twankotlin.base.IBaseView
 import com.bksx.twankotlin.bean.QueryBean
 
@@ -20,4 +21,5 @@ interface ISearchRltModel {
     interface OnGetSearchListener {
         fun onSearchListener(queryBean: QueryBean?)
     }
+
 }

@@ -60,4 +60,16 @@
 
     </android.support.constraint.ConstraintLayout>
 
+    <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab_setting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:src="@mipmap/setting"
+            app:fabSize="mini"
+            app:backgroundTint="@color/colorPrimary"
+            android:layout_margin="20dp"
+            app:elevation="6dp"
+            app:pressedTranslationZ="12dp" tools:ignore="MissingConstraints,RtlHardcoded"/>
 </android.support.constraint.ConstraintLayout>

@@ -77,7 +77,6 @@ class SearchActivity : BaseMVPActivity<IHotKeyView, HotKeyPresenter>(), IHotKeyV
         }
 
         tab_go_search.setOnTagClickListener { _, position, _ ->
-            ToastUtils.showShortToast(this, mTabList[position] + "")
             val key: String = mTabList[position]
             mKeyPresenter.saveKey2DB(key)
             start(SearchResultActivity::class.java, mapOf(Pair(Constant.SEARCH_KEY,key)))

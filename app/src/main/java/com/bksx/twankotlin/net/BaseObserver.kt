@@ -3,6 +3,7 @@ package com.bksx.twankotlin.net
 import android.content.Context
 import com.bksx.twankotlin.App
 import com.bksx.twankotlin.base.BaseBean
+import com.bksx.twankotlin.utils.toast
 import com.blankj.utilcode.utils.ToastUtils
 import com.google.gson.JsonParseException
 import io.reactivex.Observer
@@ -29,7 +30,7 @@ interface BaseObserver <T : BaseBean> : Observer<T>{
             if (0 == it.errorCode){
                 onSuccess(t)
             }else{
-                ToastUtils.showShortToast(App.mInstance,it.errorCode)
+                App.mInstance.toast(it.errorMsg)
                 onFailed()
             }
         }

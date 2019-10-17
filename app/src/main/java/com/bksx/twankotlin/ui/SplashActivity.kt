@@ -34,7 +34,7 @@ class SplashActivity : BaseActivity() {
                 jump2Main()
             }
         }
-        ToastUtils.showShortToast(this,"执行主线程")
+//        ToastUtils.showShortToast(this,"执行主线程")
         tv_splash_jump.setOnClickListener {
             jump2Main()
             job?.cancel()

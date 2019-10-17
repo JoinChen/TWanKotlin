@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="40dp" xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content"
+               app:layout_constraintTop_toTopOf="parent"
+               app:layout_constraintLeft_toLeftOf="parent"
+               android:src="@mipmap/hot"
+               android:id="@+id/iv_hot"
+               android:layout_margin="10dp"/>
+
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+              app:layout_constraintStart_toEndOf="@+id/iv_hot"
+              app:layout_constraintTop_toTopOf="parent"
+              android:text="@string/HotKey"
+              android:layout_margin="10dp"
+              android:textSize="16sp"
+              android:textColor="@color/colorAccent"
+              android:id="@+id/tv_fhotkey"/>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,4 +1,4 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
     <string name="app_name">TWanKotlin</string>
     <string name="jump">跳过</string>
     <string name="serach_hint">Artical</string>
@@ -6,4 +6,25 @@
     <string name="HotKey">HotKey</string>
     <string name="TestTree">Tree</string>
     <string name="TestWxChapter">WxChapter</string>
+    <string name="cancel_collect">取消收藏</string>
+    <string name="collect_offline">shoucang(离线模式)</string>
+    <string name="collect_user">收藏(账号绑定)</string>
+    <string name="cancel">取消</string>
+    <string name="collect">收藏(离线收藏)</string>
+    <string name="dd">TODO</string>
+    <string name="hint_name">username</string>
+    <string name="hint_pwd">password</string>
+    <string name="confirm_password">confirm password</string>
+    <string name="tv_setting_user">点击登录</string>
+    <string name="tv_setting_store" tools:ignore="ExtraTranslation">我的收藏</string>
+    <string name="tv_setting_version">当前版本</string>
+    <string name="tv_setting_about_us">关于我们</string>
+    <string name="tv_setting_quite">退出登录</string>
+    <string name="tv_version_code">1.0</string>
+    <string name="enter">确定</string>
+    <string name="home_article">首页文章</string>
+    <string name="HotKeyBelow">大家都在搜</string>
+    <string name="knowledgeTree">知识体系</string>
+    <string name="android_author">Android大牛</string>
+    <string name="wx">微信</string>
 </resources>
